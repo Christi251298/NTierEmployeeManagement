@@ -1,0 +1,13 @@
+C:\Users\Christiana\source\repos\WPF\NTierWPF\BALayer\bin\Debug\BALayer.dll
+C:\Users\Christiana\source\repos\WPF\NTierWPF\BALayer\bin\Debug\BALayer.pdb
+C:\Users\Christiana\source\repos\WPF\NTierWPF\BALayer\bin\Debug\BELayer.dll
+C:\Users\Christiana\source\repos\WPF\NTierWPF\BALayer\bin\Debug\DALayer.dll
+C:\Users\Christiana\source\repos\WPF\NTierWPF\BALayer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Christiana\source\repos\WPF\NTierWPF\BALayer\bin\Debug\BELayer.pdb
+C:\Users\Christiana\source\repos\WPF\NTierWPF\BALayer\bin\Debug\DALayer.pdb
+C:\Users\Christiana\source\repos\WPF\NTierWPF\BALayer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Christiana\source\repos\WPF\NTierWPF\BALayer\obj\Debug\BALayer.csproj.AssemblyReference.cache
+C:\Users\Christiana\source\repos\WPF\NTierWPF\BALayer\obj\Debug\BALayer.csproj.CoreCompileInputs.cache
+C:\Users\Christiana\source\repos\WPF\NTierWPF\BALayer\obj\Debug\BALayer.csproj.CopyComplete
+C:\Users\Christiana\source\repos\WPF\NTierWPF\BALayer\obj\Debug\BALayer.dll
+C:\Users\Christiana\source\repos\WPF\NTierWPF\BALayer\obj\Debug\BALayer.pdb

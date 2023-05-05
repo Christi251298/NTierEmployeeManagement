@@ -1,0 +1,120 @@
+﻿<UserControl x:Class="NTierWPF.Views.EmployeeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Margin="5,8,5,8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="Employee Management"
+                   Grid.Row="0" Grid.Column="1"
+                   FontSize="20" FontWeight="Bold"
+                   HorizontalAlignment="Center" Margin="5,8,5,8" />
+        <TextBlock Text="Enter Id"
+                   Grid.Row="1"
+                   Grid.Column="0" Margin="5,8,5,8" />
+        <TextBlock Text="Enter Name"
+                   Grid.Row="2"
+                   Grid.Column="0" Margin="5,8,5,8" />
+        <TextBlock Text="Enter Email"
+                   Grid.Row="3"
+                   Grid.Column="0" Margin="5,8,5,8" />
+        <TextBlock Text="Enter Gender"
+                   Grid.Row="4"
+                   Grid.Column="0" Margin="5,8,5,8" />
+        <TextBlock Text="Enter Status"
+                   Grid.Row="5"
+                   Grid.Column="0" Margin="5,8,5,8" />
+        <TextBox Name="txtid"
+                 Grid.Row="1"
+                 Grid.Column="1" Text="{Binding Path=CurrentEmployee.id,Mode=TwoWay}" Margin="5,8,5,8" />
+        <TextBox Name="txtname"
+                 Grid.Row="2"
+                 Grid.Column="1" Text="{Binding Path=CurrentEmployee.name,Mode=TwoWay}" Margin="5,8,5,8"/>
+        <TextBox Name="txtemail"
+                 Grid.Row="3"
+                 Grid.Column="1" Text="{Binding Path=CurrentEmployee.email,Mode=TwoWay}" Margin="5,8,5,8"/>
+        
+        <ComboBox Grid.Row="4" Grid.Column="1" Margin="5,8,5,8"
+    SelectedValue="{Binding CurrentEmployee.gender}" 
+    SelectedValuePath="Content"
+    >
+            <ComboBoxItem Content="Choose your gender" />
+            <ComboBoxItem Content="male" />
+            <ComboBoxItem Content="female" />
+        </ComboBox>
+
+        
+        <ComboBox Grid.Row="5"
+                 Grid.Column="1" Margin="5,8,5,8"
+    SelectedValue="{Binding CurrentEmployee.status}" 
+    SelectedValuePath="Content"
+    >
+            <ComboBoxItem Content="please select" />
+            <ComboBoxItem Content="active" />
+            <ComboBoxItem Content="inactive" />
+        </ComboBox>
+
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="6"
+                    Grid.Column="1" Margin="5,8,5,8">
+            <Button Name="add"
+                    Content="ADD" Command="{Binding Path=SaveCommand}" Margin="3"/>
+            <Button Name="edit"
+                    Content="EDIT" Margin="3" Command="{Binding Path=UpdateCommand}"/>
+            <Button Name="delete"
+                    Content="DELETE" Margin="3" Command="{Binding Path=DeleteCommand}"/>
+            <!--<Button Name="find"
+                    Content="FIND" Margin="3" Command="{Binding Path=SearchCommand}" />-->
+            <Button Name="clear"
+                    Content="CLEAR" Margin="3"  Click="clear_Click" />
+        </StackPanel>
+        <TextBlock Name="messgae"
+                   Grid.Column="1"
+                   Grid.Row="7" Margin="5,8" Padding="3" Text="{Binding Path=Message}"/>
+
+        <DataGrid  x:Name="EmployeeList"
+                  AutoGenerateColumns="False"
+                  Grid.Row="8" Grid.Column="1"
+                 ItemsSource="{Binding Path=EmployeeList, Mode=TwoWay}"
+                   SelectedItem="{Binding Path=CurrentEmployee, Mode=TwoWay}" Margin="5,8,5,8" >
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Header="Employee Id"
+                                    Width="Auto"
+                                    Binding="{Binding Path=id}"/>
+                <DataGridTextColumn Header="Employee Name"
+                                    Width="Auto"
+                                    Binding="{Binding Path=name}"/>
+                <DataGridTextColumn Header="Employee Email"
+                                    Width="Auto"
+                                    Binding="{Binding Path=email}"/>
+                <DataGridTextColumn Header="Employee Gender"
+                                    Width="Auto"
+                                    Binding="{Binding Path=gender}"/>
+                <DataGridTextColumn Header="Employee Status"
+                                    Width="*"
+                                    Binding="{Binding Path=status}"/>
+
+
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+    </Grid>
+</UserControl>

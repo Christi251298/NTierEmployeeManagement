@@ -1,0 +1,11 @@
+C:\Users\Christiana\source\repos\WPF\NTierWPF\DALayer\bin\Debug\DALayer.dll
+C:\Users\Christiana\source\repos\WPF\NTierWPF\DALayer\bin\Debug\DALayer.pdb
+C:\Users\Christiana\source\repos\WPF\NTierWPF\DALayer\bin\Debug\BELayer.dll
+C:\Users\Christiana\source\repos\WPF\NTierWPF\DALayer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Christiana\source\repos\WPF\NTierWPF\DALayer\bin\Debug\BELayer.pdb
+C:\Users\Christiana\source\repos\WPF\NTierWPF\DALayer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Christiana\source\repos\WPF\NTierWPF\DALayer\obj\Debug\DALayer.csproj.AssemblyReference.cache
+C:\Users\Christiana\source\repos\WPF\NTierWPF\DALayer\obj\Debug\DALayer.csproj.CoreCompileInputs.cache
+C:\Users\Christiana\source\repos\WPF\NTierWPF\DALayer\obj\Debug\DALayer.csproj.CopyComplete
+C:\Users\Christiana\source\repos\WPF\NTierWPF\DALayer\obj\Debug\DALayer.dll
+C:\Users\Christiana\source\repos\WPF\NTierWPF\DALayer\obj\Debug\DALayer.pdb

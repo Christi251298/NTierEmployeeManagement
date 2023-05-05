@@ -1,0 +1,6 @@
+C:\Users\Christiana\source\repos\WPF\NTierWPF\BELayer\bin\Debug\BELayer.dll
+C:\Users\Christiana\source\repos\WPF\NTierWPF\BELayer\bin\Debug\BELayer.pdb
+C:\Users\Christiana\source\repos\WPF\NTierWPF\BELayer\obj\Debug\BELayer.csproj.AssemblyReference.cache
+C:\Users\Christiana\source\repos\WPF\NTierWPF\BELayer\obj\Debug\BELayer.csproj.CoreCompileInputs.cache
+C:\Users\Christiana\source\repos\WPF\NTierWPF\BELayer\obj\Debug\BELayer.dll
+C:\Users\Christiana\source\repos\WPF\NTierWPF\BELayer\obj\Debug\BELayer.pdb
